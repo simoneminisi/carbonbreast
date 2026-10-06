@@ -1,0 +1,15 @@
+# Keras 3 on the JAX backend. jax[cuda12] pulls the matching CUDA/cuDNN wheels.
+# tensorflow-cpu is REQUIRED but stays off the GPU -- it only powers the tf.data input
+# pipeline (Keras 3 supports tf.data on every backend). Do NOT install tensorflow[and-cuda]
+# in this env: its nvidia-*-cu12 pins conflict with jax's.
+# Install in a FRESH venv, separate from the torch and the TF-keras environments.
+jax[cuda12]>=0.4.30
+tensorflow-cpu>=2.17,<2.21
+keras>=3.5
+keras-hub>=0.17          # resnet_18_imagenet preset (timm-converted weights)
+numpy>=1.26
+pandas>=2.0
+opencv-python-headless>=4.9,<5
+scikit-learn>=1.3
+matplotlib>=3.7
+codecarbon>=2.5

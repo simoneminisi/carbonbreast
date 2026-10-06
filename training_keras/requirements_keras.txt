@@ -1,0 +1,12 @@
+# Keras 3 on the TensorFlow backend. tensorflow[and-cuda] pulls the matching CUDA/cuDNN
+# wheels -- no system CUDA toolkit needed on the VM. For a CPU-only smoke test install
+# tensorflow-cpu instead of tensorflow[and-cuda].
+tensorflow[and-cuda]>=2.17,<2.21
+keras>=3.5
+keras-hub>=0.17          # resnet_18_imagenet preset (timm-converted weights)
+numpy>=1.26
+pandas>=2.0
+opencv-python-headless>=4.9,<5
+scikit-learn>=1.3
+matplotlib>=3.7
+codecarbon>=2.5

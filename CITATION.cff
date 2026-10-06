@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the paper (reference to be added on publication) and this repository."
+title: "CarbonBreast: accuracy versus energy for mammography classification"
+type: software
+authors:
+  - family-names: Minisi
+    given-names: Simone
+repository-code: "https://github.com/simoneminisi/carbonbreast"
+license: MIT
+version: "1.0"
+date-released: "2026-10-06"
+keywords:
+  - mammography
+  - VinDr-Mammo
+  - energy consumption
+  - green AI
+  - PyTorch
+  - TensorFlow
+  - JAX
+  - quantization

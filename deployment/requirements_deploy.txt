@@ -1,0 +1,16 @@
+# Deployment-matrix benchmark (bench_infer.py): torch checkpoints -> torch fp32/fp16, TensorRT
+# fp16/int8 (GPU), OpenVINO fp32 + NNCF int8 (CPU). Fresh venv; do NOT co-install with the
+# tensorflow[and-cuda] or jax[cuda12] venvs (conflicting nvidia-*-cu12 wheel pins).
+torch>=2.4,<2.9
+torchvision>=0.19
+timm>=1.0
+tensorrt-cu12>=10.3,<11      # NOT the bare "tensorrt" meta-package: it now resolves to CUDA-13 libs, unusable on CUDA-12 drivers
+onnx>=1.16
+openvino>=2024.6
+nncf>=2.14
+codecarbon>=2.5
+nvidia-ml-py>=12
+numpy>=1.26
+pandas>=2.0
+opencv-python-headless>=4.9,<5
+scikit-learn>=1.3

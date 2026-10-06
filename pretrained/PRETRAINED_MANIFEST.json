@@ -1,0 +1,29 @@
+{
+ "resnet18": {
+  "timm_tag": "resnet18.a1_in1k",
+  "file": "resnet18.npz",
+  "sha256": "3945868df41014f107d140cde1badad3e07885cdc9a36229bd1003c80a567c69",
+  "n_arrays": 100,
+  "size_mb": 44.744448,
+  "timm": "1.0.27",
+  "torch": "2.5.1+cu121"
+ },
+ "mobilenetv3_small_100": {
+  "timm_tag": "mobilenetv3_small_100.lamb_in1k",
+  "file": "mobilenetv3_small_100.npz",
+  "sha256": "1d8c48ec24d8dfd02997be5a6299dd1af90b5e217d78fbe518eb16bc174fcef1",
+  "n_arrays": 208,
+  "size_mb": 6.119872,
+  "timm": "1.0.27",
+  "torch": "2.5.1+cu121"
+ },
+ "convnext_small": {
+  "timm_tag": "convnext_small.in12k_ft_in1k",
+  "file": "convnext_small.npz",
+  "sha256": "a7c7d01a08f16900fb68fdc3ebfd60f0baaf83c52da038e6a3776bfce211f805",
+  "n_arrays": 342,
+  "size_mb": 197.818752,
+  "timm": "1.0.27",
+  "torch": "2.5.1+cu121"
+ }
+}

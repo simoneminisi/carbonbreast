@@ -1,0 +1,36 @@
+# data (VinDr-Mammo is credentialed; never commit it) and everything derived from it
+data/
+**/processed_dataset_*/
+**/patches/
+**/VINDR-MAMMO/
+
+# trained weights and converted pretrained weights (distributed as release assets, see pretrained/README.md)
+*.pt
+*.npz
+*.h5
+*.weights.h5
+*.onnx
+*.engine
+*.calib
+**/trt_engines/
+**/ov_ir/
+**/checkpoints/
+pretrained/*.npz
+
+# bundles and archives
+*.tar
+*.tar.gz
+*.zip
+
+# environments and caches
+.venv*/
+venv/
+__pycache__/
+*.pyc
+.pip-cache/
+.ipynb_checkpoints/
+
+# tool output that is not a result
+emissions.csv
+*.log.tmp
+.DS_Store
